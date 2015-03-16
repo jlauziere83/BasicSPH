@@ -18,6 +18,9 @@
  *
  * Description: Adapter class between BasicSPH and HoudiniFileDumpHelper
  *
+ * Modified by Justin Lauziere:
+ * 3/16/2015 - modified SPHParticle forward declaration to struct to fix compiler error
+ *
  ******************************************************************************/
 
 #ifndef SPHPARTICLEHOUDINIIO_H
@@ -26,7 +29,7 @@
 #include <vector>
 #include <string>
 
-class SPHParticle;
+struct SPHParticle;
 
 namespace SPHParticleHoudiniIO
 {
